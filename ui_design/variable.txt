@@ -1,0 +1,18 @@
+color / surface
+feed: FFFFFF
+header: F1F5F9
+card: FFFFFF
+subtle: F1F5F9
+
+color / page
+background: F8FAFC
+
+color / text
+primary: 0F172A
+secondary: 475569
+muted: 94A3B8
+title: 0F172A
+
+color / icon
+secondary: 64748B
+primary: 0F172A

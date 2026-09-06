@@ -1,0 +1,17 @@
+pokedex:
+  poke-api:
+    base-url: https://pokeapi.co/api/v2
+    connect-timeout: 2s
+    read-timeout: 5s
+    retries: 2
+    retry-initial-delay: 200ms
+  page:
+    default-size: 20
+    max-size: 100
+  cache:
+    ttl: 1h
+    refresh-interval: 30m
+
+spring:
+  application:
+    name: pokedex-backend

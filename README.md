@@ -49,7 +49,7 @@ Error responses contain a timestamp, HTTP status, and message. Invalid client in
 
 ## Caching and Resilience
 
-`PokemonCache` is a thread-safe cache facade over PokeAPI resources. It caches Pokemon, species, generation, and type data with a one-hour TTL. When a refresh fails, a stale cached value is returned where available. The refresh scheduler clears cached values every 30 minutes.
+`PokemonCache` is a thread-safe cache facade over PokeAPI resources. It caches Pokemon, species, generation, and type data with a one-hour TTL. When a TTL refresh fails, a stale cached value is returned where available.
 
 `PokeApiClient` is the only external HTTP boundary. It uses a five-second connection timeout, five-second read timeout, and two exponential-backoff retries beginning at 200 ms.
 
@@ -64,7 +64,6 @@ Configuration lives in [backend/src/main/resources/application.yml](backend/src/
 | `pokedex.page.default-size` | `5` | Initial frontend page size. |
 | `pokedex.page.max-size` | `10` | Largest allowed API page size. |
 | `pokedex.cache.ttl` | `1h` | Cache entry lifetime. |
-| `pokedex.cache.refresh-interval` | `30m` | Cache clear interval. |
 
 ## Checks
 

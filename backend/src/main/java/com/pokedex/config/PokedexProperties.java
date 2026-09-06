@@ -61,15 +61,12 @@ public class PokedexProperties {
     }
 
     /**
-     * Cache lifetime and refresh settings.
+     * Cache lifetime settings.
      */
     public static class Cache {
         private Duration ttl;
-        private Duration refreshInterval;
 
         public Duration getTtl() { return ttl; }
         public void setTtl(Duration value) { ttl = value; }
-        public Duration getRefreshInterval() { return refreshInterval; }
-        public void setRefreshInterval(Duration value) { refreshInterval = value; }
     }
 }

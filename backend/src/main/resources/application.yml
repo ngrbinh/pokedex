@@ -1,16 +1,19 @@
+server:
+  port: 8080
+
 pokedex:
+  frontend-url: http://localhost:5173
   poke-api:
     base-url: https://pokeapi.co/api/v2
-    connect-timeout: 2s
+    connect-timeout: 5s
     read-timeout: 5s
     retries: 2
     retry-initial-delay: 200ms
   page:
-    default-size: 20
-    max-size: 100
+    default-size: 5
+    max-size: 10
   cache:
     ttl: 1h
-    refresh-interval: 30m
 
 spring:
   application:

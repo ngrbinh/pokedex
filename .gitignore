@@ -4,12 +4,14 @@ backend/target/
 *.class
 *.jar
 *.war
-.mvn/
 
 # Node and Vite
 frontend/node_modules/
 frontend/dist/
 frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/vite.config.d.ts
+frontend/vite.config.js
 
 # IDE and operating system
 .idea/

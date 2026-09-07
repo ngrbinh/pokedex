@@ -38,6 +38,26 @@ Open `http://localhost:5173`.
 
 The backend runs at `http://localhost:8080`. Vite proxies `/api` to the backend, and the backend permits requests from the frontend development origin.
 
+## Run with Docker Compose
+
+Build and start both services:
+
+```powershell
+docker compose up --build
+```
+
+Open `http://localhost:5173`. The backend is available at `http://localhost:8080`. Stop the services with `docker compose down`.
+
+Override either published host port when needed:
+
+```powershell
+$env:BACKEND_PORT = 8081
+$env:FRONTEND_PORT = 5174
+docker compose up --build
+```
+
+The defaults are `8080` for the backend and `5173` for the frontend.
+
 ## API
 
 | Endpoint | Description |

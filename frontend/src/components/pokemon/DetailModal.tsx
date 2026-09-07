@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import type { PokemonDetail } from "../api";
+import type { PokemonDetail } from "../../api/pokemonTypes";
 import { DetailCard } from "./DetailCard";
 
 type DetailModalProps = {

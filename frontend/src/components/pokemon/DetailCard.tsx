@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { X } from "lucide-react";
-import type { PokemonDetail } from "../api";
+import type { PokemonDetail } from "../../api/pokemonTypes";
 import { TypeBadge } from "./TypeBadge";
 
 type DetailCardProps = {

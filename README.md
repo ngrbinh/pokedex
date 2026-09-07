@@ -65,6 +65,12 @@ Configuration lives in [backend/src/main/resources/application.yml](backend/src/
 | `pokedex.page.max-size` | `10` | Largest allowed API page size. |
 | `pokedex.cache.ttl` | `1h` | Cache entry lifetime. |
 
+Frontend configuration lives in `frontend/.env`. Copy `frontend/.env.example` when setting up a new environment.
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `VITE_POKEMON_PAGE_SIZE` | `5` | Number of Pokemon requested per page. |
+
 ## Checks
 
 ```powershell

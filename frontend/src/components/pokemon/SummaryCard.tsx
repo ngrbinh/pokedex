@@ -1,4 +1,4 @@
-import type { PokemonSummary } from "../api";
+import type { PokemonSummary } from "../../api/pokemonTypes";
 import { TypeBadge } from "./TypeBadge";
 
 type SummaryCardProps = {
